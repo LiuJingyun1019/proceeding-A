@@ -1,0 +1,108 @@
+﻿
+
+[General Information]
+Function Name = b3p6strainp6
+Brief Description = 
+Function Source = N/A
+Number Of Parameters = 9
+Function Type = User-Defined
+Function Form = Expression
+Path = 
+Number Of Independent Variables = 1
+Number Of Dependent Variables = 1
+Category = Origin Basic Functions
+Function Model = Explicit
+
+
+[Fitting Parameters]
+Names = a,b,c,d,e,f,g,h,i
+Initial Values = 1e-009(F),1.1e-011(V),300(F),0.9(V),320(F),1(V),3000000000(F),0.067(V),1(F)
+Meanings = ?,?,?,?,?,?,?,?,?
+Lower Bounds = --(I, Off),1e-015(I, On),--(I, Off),-1(X, On),255(I, On),--(I, Off),50000000(I, On),0(X, On),--(I, On)
+Upper Bounds = --(I, Off),1e-008(I, On),--(I, Off),1(I, On),400(I, On),--(I, Off),8000000000(I, On),--(I, Off),--(I, Off)
+Naming Method = User-Defined
+Number Of Significant Digits = 0,0,0,0,0,0,0,0,0
+Unit = ,,,,,,,,
+Format = --,--,--,--,--,--,--,--,--
+CustomDisplay = --,--,--,--,--,--,--,--,--
+
+
+[Independent Variables]
+x = 
+
+
+[Dependent Variables]
+y = 
+
+
+[Formula]
+1.65325+8.80572*(1-i*exp(-((2*((4*3.14*((a+b*(x-c))^3)/3)-(4*3.14*(a^3)/3)-(((750-e)/750)*(x/(x-e)))*(3.14*((((a+b*(x-c))^2)*((-a+b*(2-3*d)*(x-c))/3))+(((a+b*d*(x-c))^3)/3))))^2)*g*(10^(-h*(x-c)))/(3*(1.38*(10^(-23)))*(4*3.14*(a^3)/3)*x))))
+
+
+[Initializations]
+
+
+[After Fitting]
+
+
+[Constants]
+
+
+[Controls]
+General Linear Constraints = 0
+Initialization Scripts = 0
+Scripts After Fitting = 0
+Number Of Duplicates = N/A
+Duplicate Offset = N/A
+Duplicate Unit = N/A
+Generate Curves After Fitting = 1
+Curve Point Spacing = Uniform on X-Axis Scale
+Generate Peaks After Fitting = 1
+Generate Peaks During Fitting = 1
+Generate Peaks with Baseline = 1
+Paste Parameters to Plot After Fitting = 1
+Paste Parameters to Notes Window After Fitting = 1
+Generate Residuals After Fitting = 0
+Keep Parameters = 0
+Compile On Param Change Script = 1
+Enable Parameters Initialization = 1
+Treat All Numbers As Double = 1
+Use Initial Formula = 1
+AllowInitializingFixedParameters = 0
+
+
+[Compile Function]
+Compile = 0
+Compile Parameters Initialization = 1
+OnParamChangeScriptsEnabled = 0
+
+
+[Parameters Initialization]
+
+
+[Origin C Function Header]
+
+
+[Origin C Parameter Initialization Header]
+
+
+[Derived Parameter Settings]
+Unit = 
+Names = 
+Meanings = 
+
+
+[Constraints]
+
+
+[QuickCheck]
+x=400
+a=1E-9
+b=1.1E-11
+c=300
+d=0.9
+e=320
+f=1
+g=3E9
+h=0.067
+i=1
